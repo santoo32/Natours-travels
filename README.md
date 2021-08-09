@@ -6,3 +6,6 @@ This repository will be used to create a fictional company's landing page comple
 
 ## Setup local environment
 
+ - Clone the repository
+ - Run <code>npm install</code>
+ - Run <code>npm start</code>
