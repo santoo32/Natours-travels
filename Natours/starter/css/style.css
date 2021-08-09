@@ -6,3 +6,32 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/*Universal reset*/
+* {
+    margin: 0;
+    padding: 0;
+    /*Border-box makes padding and margin to be considered INSIDE the total width*/
+    box-sizing: border-box;
+}
+
+body {
+    /*Project wide font elements*/
+    font-family: "Lato, sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777
+}
+
+.header{
+    /*vh means viewport height, this means the header will be occuping 95 percent of its size*/
+    height: 95vh;
+    /*Linear gradent on top of image*/
+    background-image: linear-gradient(to right,#7ed56fbe, #28b485cc), url(../img/hero.jpg);
+    /*Image occupies whole background*/
+    background-size: cover;
+    /*Makes the top of the image not resizable*/
+    background-position: top;
+
+}
