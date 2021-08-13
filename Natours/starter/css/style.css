@@ -36,7 +36,7 @@ body {
     /*vh means viewport height, this means the header will be occuping 95 percent of its size*/
     height: 95vh;
     /*Linear gradent on top of image*/
-    background-image: linear-gradient(to right,#7ed56fbe, #28b485cc), url(../img/hero.jpg);
+    background-image: linear-gradient(to right,#7ed56fbe, #2db428cc), url(../img/hero.jpg);
     /*Image occupies whole background*/
     background-size: cover;
     /*Makes the top of the image not resizable*/
@@ -60,6 +60,10 @@ body {
     text-transform: uppercase;
     font-size: 60px;
     letter-spacing: 35px;
+
+    /*Assign animation and the duration*/
+    animation-name: moveInLeft;
+    animation-duration: 2s;
 }
 
 .header-text-secondary {
@@ -67,6 +71,16 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.4px;
+
+    /*Assing animtation name and duration*/
+    animation-name: moveInRight;
+    animation-duration: 2s;
+
+    /*
+    animation-timining-function: ease-in
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    */
 }
 
 .actions.toolbar{
@@ -81,4 +95,6 @@ body {
     border-width: 0;
     background-color: #ffffff;
 
+    /*Assing animtation name and duration*/
+    animation: moveInDown 2s;
 }
