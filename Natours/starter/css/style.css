@@ -6,3 +6,114 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+
+/*Universal reset*/
+* {
+    margin: 0;
+    padding: 0;
+    /*Border-box makes padding and margin to be considered INSIDE the total width*/
+    box-sizing: border-box;
+}
+
+body {
+    /*Project wide font elements*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1.7;
+    color: #ffffff;
+    /*Set the padding around the whole app*/
+    padding: 30px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    /*vh means viewport height, this means the header will be occuping 95 percent of its size*/
+    height: 95vh;
+    /*Linear gradent on top of image*/
+    background-image: linear-gradient(to right,#7ed56fbe, #2db428cc), url(../img/hero.jpg);
+    /*Image occupies whole background*/
+    background-size: cover;
+    /*Makes the top of the image not resizable*/
+    background-position: top;
+    /*Crop image into a polygon*/
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    display: block;
+    height: 35px;
+}
+
+.header-text {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 35px;
+
+    /*Assign animation and the duration*/
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+}
+
+.header-text-secondary {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+
+    /*Assing animtation name and duration*/
+    animation-name: moveInRight;
+    animation-duration: 2s;
+
+    /*
+    animation-timining-function: ease-in
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    */
+}
+
+.actions.toolbar{
+    margin-top: 15px;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+  
+    padding: 15px 40px;
+    border-radius: 100px;
+    border-width: 0;
+
+    transition: all .3s;
+}
+
+.button-primary{
+    background-color: #ffffff;
+    color: #777;
+    /*Assing animtation name and duration*/
+    animation: moveInDown 2s;
+}
+
+.button-primary:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); 
+}
+
+.button-primary:active{
+    /*When clicked, the button goes 1 px above the default state*/
+    transform: translateY(-1px);
+    /*Shadow reduces when button is clicked*/
+    box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+}

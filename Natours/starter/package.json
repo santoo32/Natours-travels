@@ -1,0 +1,14 @@
+{
+  "name": "advanced-css-course",
+  "version": "1.0.0",
+  "description": "Repository to implement the project",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "Santiago Roa",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^1.3.1"
+  }
+}
