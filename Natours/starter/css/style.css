@@ -84,17 +84,35 @@ body {
 }
 
 .actions.toolbar{
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .button-primary{
-    padding: 10px;
     text-transform: uppercase;
-    box-shadow: 10px;
-    border-radius: 15px;
-    border-width: 0;
     background-color: #ffffff;
+    color: #777;
+    
+    padding: 15px 40px;
+    border-radius: 100px;
+    border-width: 0;
 
+    font-family: inherit;
+    font-weight: 700;
+    
+    transition: all .3s;
+    
     /*Assing animtation name and duration*/
     animation: moveInDown 2s;
+}
+
+.button-primary:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); 
+}
+
+.button-primary:active{
+    /*When clicked, the button goes 1 px above the default state*/
+    transform: translateY(-1px);
+    /*Shadow reduces when button is clicked*/
+    box-shadow: 0 5px 10px rgba(0,0,0,.2); 
 }
