@@ -4,6 +4,9 @@ This repository will be used to create a fictional company's landing page comple
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/31729899/129734546-98c6e801-6be8-4a83-87a3-560ef9d73bff.png)
+
+
 ## Setup local environment
 
  - Clone the repository
