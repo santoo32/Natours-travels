@@ -87,20 +87,21 @@ body {
     margin-top: 15px;
 }
 
-.button-primary{
+.btn{
     text-transform: uppercase;
-    background-color: #ffffff;
-    color: #777;
-    
+    font-family: inherit;
+    font-weight: 700;
+  
     padding: 15px 40px;
     border-radius: 100px;
     border-width: 0;
 
-    font-family: inherit;
-    font-weight: 700;
-    
     transition: all .3s;
-    
+}
+
+.button-primary{
+    background-color: #ffffff;
+    color: #777;
     /*Assing animtation name and duration*/
     animation: moveInDown 2s;
 }
