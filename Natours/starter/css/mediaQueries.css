@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 8px;
+  }
+
+  .header {
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  }
+}
