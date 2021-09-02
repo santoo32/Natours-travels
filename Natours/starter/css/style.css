@@ -19,11 +19,11 @@ body {
     /*Project wide font elements*/
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 100px;
+    font-size: 6.25rem;
     line-height: 1.7;
     color: #ffffff;
     /*Set the padding around the whole app*/
-    padding: 30px;
+    padding: 0.3em;
 }
 
 .header{
@@ -45,32 +45,34 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-}
-
-.logo {
+.header__logo {
     display: block;
-    height: 35px;
+    height: 2.18rem;
 }
 
-.header-text {
+.header__logo-box {
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+
+
+.header__text {
     text-transform: uppercase;
-    font-size: 60px;
-    letter-spacing: 35px;
+    font-size: 3.75rem;
+    letter-spacing: 2.18rem;
 
     /*Assign animation and the duration*/
     animation-name: moveInLeft;
     animation-duration: 2s;
 }
 
-.header-text-secondary {
+.header__text--secondary {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.08rem;
 
     /*Assing animtation name and duration*/
     animation-name: moveInRight;
@@ -83,8 +85,8 @@ body {
     */
 }
 
-.actions.toolbar{
-    margin-top: 15px;
+.actions__toolbar{
+    margin-top: 0.93rem;
 }
 
 .btn{
@@ -92,28 +94,28 @@ body {
     font-family: inherit;
     font-weight: 700;
   
-    padding: 15px 40px;
-    border-radius: 100px;
+    padding: 0.93rem 2.5rem;
+    border-radius: 6.25rem;
     border-width: 0;
 
     transition: all .3s;
 }
 
-.button-primary{
+.button--primary{
     background-color: #ffffff;
     color: #777;
     /*Assing animtation name and duration*/
     animation: moveInDown 2s;
 }
 
-.button-primary:hover{
+.button--primary:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.2); 
+    box-shadow: 0 0.625em 1.25em rgba(0,0,0,.2); 
 }
 
-.button-primary:active{
+.button--primary:active{
     /*When clicked, the button goes 1 px above the default state*/
     transform: translateY(-1px);
     /*Shadow reduces when button is clicked*/
-    box-shadow: 0 5px 10px rgba(0,0,0,.2); 
+    box-shadow: 0 0.3125em 0.625em rgba(0,0,0,.2); 
 }
